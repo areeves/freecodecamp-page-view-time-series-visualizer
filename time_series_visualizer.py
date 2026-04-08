@@ -50,7 +50,7 @@ def draw_bar_plot():
     ax = g.ax
     
     # Minimal customization
-    ax.set_xlabel("Year")
+    ax.set_xlabel("Years")
     ax.set_ylabel('Page Views Per Month')
     ax.set_title('FCC Forum Page Views')
     
