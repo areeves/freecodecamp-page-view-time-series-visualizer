@@ -42,7 +42,6 @@ def draw_bar_plot():
         y=df_bar.columns[1],      # the 'value' column after resampling
         hue="month",
         hue_order=hue_order,
-        palette="tab20"
     )
     
     # Minimal customization
@@ -76,7 +75,6 @@ def draw_box_plot():
         y='value', 
         data=df_box, 
         ax=axes[0], 
-        palette='tab10'
     )
     axes[0].set_title('Year-wise Box Plot (Trend)')
     axes[0].set_xlabel('Year')
@@ -89,7 +87,6 @@ def draw_box_plot():
         data=df_box, 
         ax=axes[1], 
         order=month_order, 
-        palette='tab10'
     )
     axes[1].set_title('Month-wise Box Plot (Seasonality)')
     axes[1].set_xlabel('Month')
